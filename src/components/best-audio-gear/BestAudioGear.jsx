@@ -17,10 +17,12 @@ export default function BestAudioGear() {
         </p>
       </div>
       <div>
-        <img
-          src="/HeadPhones/desktop/AudioGearBrat.png"
-          alt="Best Audio Gear"
-        />
+
+        <picture>
+        <source srcSet="../public/HeadPhones/tablet/audioGearTablet.png" media="(max-width: 790px)" />
+        <img src="/HeadPhones/desktop/AudioGearBrat.png" width="100%" />
+      </picture>
+
       </div>
     </section>
   );

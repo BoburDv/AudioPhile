@@ -2,13 +2,14 @@
   max-width: 1109.83px;
   margin: 160px auto;
   display: flex;
+  gap: 40px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
 .gearMain p {
-  width: 445px;
+  max-width: 445px;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0;
@@ -23,10 +24,44 @@
   letter-spacing: 1.43px;
   text-transform: uppercase;
   color: var(--dark-black);
-  width: 445px;
+  max-width: 445px;
+  width: 100%;
   margin-bottom: 32px;
 }
 
 .gearMain span {
   color: var(--orange);
+}
+
+@media (max-width: 1200px){
+  .gearContainer{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 790px){
+  .gearContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .gearMain h2{
+     max-width: 80%;
+     margin: 0 auto;
+  }
+
+  .gearMain p{
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+
+  .gearMain{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  
 }

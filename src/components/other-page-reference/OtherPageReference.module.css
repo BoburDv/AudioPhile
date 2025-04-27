@@ -18,13 +18,14 @@
   background-color: var(--gray);
   text-align: center;
   position: relative;
+  cursor: pointer;
   padding: 116px 0 30px;
 }
 
 .cardImage {
   position: absolute;
   top: -38%;
-  left: 113px;
+  left: 32%;
 }
 
 .cardTitle {
@@ -47,4 +48,61 @@
   text-align: center;
   text-decoration: none;
   margin-right: 13px;
+}
+
+.cardShop:hover{
+  color: var(--orange);
+  transition: 0.3s;
+}
+
+@media (max-width: 1200px){
+  .categories{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 1100px){
+  .card{
+    width: 300px;
+  }
+}
+
+@media (max-width: 1050px){
+  .card{
+    width: 280px;
+  }
+}
+
+@media (max-width: 978px){
+  .categoryWrapper{
+    gap: 15px;
+  }
+}
+
+@media (max-width: 940px){
+  .card{
+    width: 260px;
+  }
+  .cardImage{
+    width: 45%;
+  }
+}
+
+@media (max-width: 890px){
+  .card{
+    width: 240px;
+  }
+}
+
+@media (max-width: 830px){
+  .card{
+    width: 223px;
+  }
+}
+
+@media (max-width: 768px){
+  .categoryWrapper{
+    gap: 10px;
+  }
 }

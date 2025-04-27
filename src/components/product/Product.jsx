@@ -3,10 +3,12 @@ import styles from "./Product.module.css";
 
 export default function Product({ title, description, isNew, img, reverse }) {
   return (
-    <div className={styles.productWrapper} style={{ flexDirection: reverse ? "row-reverse" : "row" }}>
-      
+    <div
+      className={styles.productWrapper}
+      style={{ flexDirection: reverse ? "row-reverse" : "row" }}>
       <picture>
-        <img src={img} alt={title} width={540} height={560} />
+        <source srcSet="../public/HeadPhones/tablet/product-t-1.png" media="(max-width: 790px)" />
+        <img src={img} alt={title} className={styles.productImage} />
       </picture>
 
       {/* ProductMain */}
@@ -16,7 +18,6 @@ export default function Product({ title, description, isNew, img, reverse }) {
         <p className={styles.productDescription}>{description}</p>
         <Button text="See Product" />
       </div>
-
     </div>
   );
 }

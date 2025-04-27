@@ -15,6 +15,12 @@
   margin-bottom: 160px;
 }
 
+.ListLogo{
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
 .links {
   display: flex;
   gap: 34px;
@@ -37,4 +43,25 @@
   line-height: 44px;
   letter-spacing: 1.43px;
   color: var(--light-white);
+}
+
+.list{
+  display: none;
+}
+
+@media (max-width: 1200px){
+  .header{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px){
+  .header nav{
+    display: none;
+  }
+
+  .list{
+    display: block;
+  }
 }

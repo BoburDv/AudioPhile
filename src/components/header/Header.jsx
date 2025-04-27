@@ -4,8 +4,13 @@ export default function Header({ links }) {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <img src="../public/HeadPhones/desktop/audiophile.svg" alt="logo" />
+        {/* Logo/List */}
+        <div className={styles.ListLogo}>
+          <img src="/HeadPhones/desktop/list.svg" className={styles.list} />
+          <img src="../public/HeadPhones/desktop/audiophile.svg" alt="logo" />
+        </div>
 
+        {/* Links */}
         <nav>
           <ul className={styles.links}>
             {links.map((link) => (
@@ -18,6 +23,7 @@ export default function Header({ links }) {
 
         <img src="../public/HeadPhones/desktop/icon-shop.svg" alt="shopping" />
       </div>
+
       <div className={styles.headerTitle}>
         <p>HEADPHONES</p>
       </div>
