@@ -19,7 +19,7 @@ export default function BestAudioGear() {
       <div>
 
         <picture>
-        <source srcSet="../public/HeadPhones/tablet/audioGearTablet.png" media="(max-width: 790px)" />
+        <source srcSet="/HeadPhones/tablet/audioGearTablet.png" media="(max-width: 790px)" />
         <img src="/HeadPhones/desktop/AudioGearBrat.png" width="100%" />
       </picture>
 
