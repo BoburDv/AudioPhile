@@ -21,7 +21,7 @@ export default function Header({ links }) {
           </ul>
         </nav>
 
-        <img src="../public/HeadPhones/desktop/icon-shop.svg" alt="shopping" />
+        <img src="/HeadPhones/desktop/icon-shop.svg" alt="shopping" />
       </div>
 
       <div className={styles.headerTitle}>

@@ -7,7 +7,7 @@ export default function Footer({ links }) {
       <div className={styles.footerContainer}>
 
         <div className={styles.footerNav}>
-          <img src="../public/HeadPhones/desktop/audiophile.svg" alt="logo" />
+          <img src="/HeadPhones/desktop/audiophile.svg" alt="logo" />
           <nav>
             <ul className={headerStyles.links}>
               {links.map((link) => (
@@ -32,12 +32,12 @@ export default function Footer({ links }) {
 
           <div className={styles.social}>
             <img
-              src="../public/HeadPhones/desktop/facebook.svg"
+              src="/HeadPhones/desktop/facebook.svg"
               alt="facebook"
             />
-            <img src="../public/HeadPhones/desktop/twitter.svg" alt="twitter" />
+            <img src="/HeadPhones/desktop/twitter.svg" alt="twitter" />
             <img
-              src="../public/HeadPhones/desktop/instagram.svg"
+              src="/HeadPhones/desktop/instagram.svg"
               alt="instagram"
             />
           </div>
