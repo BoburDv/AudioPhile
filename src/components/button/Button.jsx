@@ -1,6 +1,6 @@
 import React from "react";
-import "./Button.css";
+import styles from "./Button.module.css";
 
-export default function Button({ href, variant, text }) {
-  return <button href={href} className="button">{text}</button>;
+export default function Button({ href, text }) {
+  return <button className={styles.button}>{text}</button>
 }

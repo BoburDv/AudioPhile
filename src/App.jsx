@@ -2,7 +2,9 @@ import React from "react";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
+import "./index.css";
 
+//HeaderLinks
 const navLinks = [
   { name: "HOME", path: "/" },
   { name: "HEADPHONES", path: "/" },
@@ -15,7 +17,7 @@ export default function App() {
     <>
       <Header links={navLinks} />
       <Main />
-      <Footer />
+      <Footer links={navLinks} />
     </>
   );
 }

@@ -1,4 +1,4 @@
-.product {
+.productWrapper {
   display: flex;
   align-items: center;
   width: 100%;
@@ -6,7 +6,7 @@
   margin-bottom: 160px;
 }
 
-.title {
+.productTitle {
   font-weight: 700;
   font-size: 40px;
   line-height: 44px;
@@ -16,21 +16,19 @@
   margin-top: 16px;
 }
 
-.description {
+.productDescription {
   opacity: 50%;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  letter-spacing: 0px;
   color: var(--dark-black);
   width: 445px;
-  margin: 32px 0px 40px;
+  margin: 32px 0 40px;
 }
 
-.isnew {
+.productLabel {
   font-weight: 400;
   font-size: 14px;
-  line-height: 100%;
   letter-spacing: 10px;
   text-transform: uppercase;
   color: var(--orange);

@@ -1,12 +1,13 @@
-import "./Header.css";
+import styles from "./Header.module.css";
 
 export default function Header({ links }) {
   return (
-    <header className="header">
-      <div className="container">
+    <header className={styles.header}>
+      <div className={styles.container}>
         <img src="../public/HeadPhones/desktop/audiophile.svg" alt="logo" />
+
         <nav>
-          <ul className="links">
+          <ul className={styles.links}>
             {links.map((link) => (
               <li key={link.name}>
                 <a href={link.path}>{link.name}</a>
@@ -14,9 +15,10 @@ export default function Header({ links }) {
             ))}
           </ul>
         </nav>
+
         <img src="../public/HeadPhones/desktop/icon-shop.svg" alt="shopping" />
       </div>
-      <div className="CategoryTitle">
+      <div className={styles.headerTitle}>
         <p>HEADPHONES</p>
       </div>
     </header>

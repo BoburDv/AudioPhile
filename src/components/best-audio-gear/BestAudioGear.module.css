@@ -1,0 +1,32 @@
+.gearContainer {
+  max-width: 1109.83px;
+  margin: 160px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.gearMain p {
+  width: 445px;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: var(--dark-black);
+  opacity: 50%;
+}
+
+.gearMain h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  text-transform: uppercase;
+  color: var(--dark-black);
+  width: 445px;
+  margin-bottom: 32px;
+}
+
+.gearMain span {
+  color: var(--orange);
+}

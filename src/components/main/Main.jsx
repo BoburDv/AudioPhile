@@ -1,6 +1,9 @@
 import Product from "../product/Product";
-import "./Main.css";
+import OtherPageReference from "../other-page-reference/OtherPageReference";
+import BestAudioGear from "../best-audio-gear/BestAudioGear";
+import styles from "./Main.module.css";
 
+//Products
 export default function Main() {
   const products = [
     {
@@ -11,23 +14,31 @@ export default function Main() {
       img: "/HeadPhones/desktop/group-1.png",
     },
     {
-      title: "ZX7 Speaker",
+      title: "XX99 Mark I Headphones",
       description:
-        "The ZX7 speaker offers a clean, high-quality audio experience.",
+        "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
       isNew: false,
       img: "/HeadPhones/desktop/group-2.png",
     },
     {
-      title: "YX1 Earphones",
+      title: "XX59 Headphones",
       description:
-        "The YX1 earphones offer great sound quality and portability.",
-      isNew: true,
+        "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
+      isNew: false,
       img: "/HeadPhones/desktop/group-3.png",
     },
   ];
 
+//CategoryCards
+  const categories = [
+    { img: "/HeadPhones/desktop/card-1.png", title: "Headphones" },
+    { img: "/HeadPhones/desktop/card-3.png", title: "Speakers" },
+    { img: "/HeadPhones/desktop/card-2.png", title: "Earphones" },
+  ];
+
+
   return (
-    <main className="main">
+    <main className={styles.main}>
       {products.map((product, index) => (
         <Product
           key={index}
@@ -35,8 +46,13 @@ export default function Main() {
           description={product.description}
           isNew={product.isNew}
           img={product.img}
+          reverse={index === 1}
         />
       ))}
+
+      <OtherPageReference categories={categories} />
+
+      <BestAudioGear />
     </main>
   );
 }

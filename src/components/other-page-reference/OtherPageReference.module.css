@@ -1,0 +1,50 @@
+.categories {
+  max-width: 1109.83px;
+  margin: 80px auto 0;
+}
+
+.categoryWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.card {
+  width: 350px;
+  height: 204px;
+  border-radius: 8px;
+  background-color: var(--gray);
+  text-align: center;
+  position: relative;
+  padding: 116px 0 30px;
+}
+
+.cardImage {
+  position: absolute;
+  top: -38%;
+  left: 113px;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 1.29px;
+  text-transform: uppercase;
+  color: var(--dark-black);
+  margin-bottom: 13px;
+}
+
+.cardShop {
+  color: var(--dark-black);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 13px;
+}

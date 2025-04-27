@@ -1,20 +1,22 @@
 import Button from "../button/Button";
-import "./Product.css";
+import styles from "./Product.module.css";
 
-export default function Product({ title, description, isNew, img }) {
+export default function Product({ title, description, isNew, img, reverse }) {
   return (
-    <div className="product">
+    <div className={styles.productWrapper} style={{ flexDirection: reverse ? "row-reverse" : "row" }}>
+      
       <picture>
-        {/* <source media="(max-width: 375px)" srcSet={mobile}/>
-        <source media="(max-width: 768px" srcSet={tablet}/> */}
         <img src={img} alt={title} width={540} height={560} />
       </picture>
-      <div>
-        {isNew && <span className="isnew">NEW PRODUCT</span>}
-        <h3 className="title">{title}</h3>
-        <p className="description">{description}</p>
-        <Button text="See Product"/>
+
+      {/* ProductMain */}
+      <div className={styles.productContent}>
+        {isNew && <span className={styles.productLabel}>NEW PRODUCT</span>}
+        <h3 className={styles.productTitle}>{title}</h3>
+        <p className={styles.productDescription}>{description}</p>
+        <Button text="See Product" />
       </div>
+
     </div>
   );
 }

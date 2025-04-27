@@ -1,57 +1,57 @@
-:root{
-    --orange: #d87d4a;
-    --black: #101010;
-    --gray: #f1f1f1;
-    --light-gray: #fafafa;
-    --light-orange: #fbaf85;
-    --light-white: #ffffff;
-    --dark-black: #000000;
+:root {
+  --orange: #d87d4a;
+  --black-10: #101010;
+  --gray: #f1f1f1;
+  --light-gray: #fafafa;
+  --light-orange: #fbaf85;
+  --light-white: #ffffff;
+  --dark-black: #000000;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('./assets/fonts/Manrope-Medium.woff2') format('woff2'),
-        url('./assets/fonts/Manrope-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.woff2") format("woff2"),
+       url("/fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('./assets/fonts/Manrope-Regular.woff2') format('woff2'),
-        url('./assets/fonts/Manrope-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.woff2") format("woff2"),
+       url("/fonts/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('./assets/fonts/Manrope-Bold.woff2') format('woff2'),
-        url('./assets/fonts/Manrope-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Bold.woff2") format("woff2"),
+       url("/fonts/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: "Manrope", "Arial", sans-serif;
-    height: 100%;
+body {
+  font-family: "Manrope", "Arial", sans-serif;
+  height: 100%;
 }
 
-#root{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
