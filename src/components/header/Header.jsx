@@ -7,7 +7,7 @@ export default function Header({ links }) {
         {/* Logo/List */}
         <div className={styles.ListLogo}>
           <img src="/HeadPhones/desktop/list.svg" className={styles.list} />
-          <img src="../public/HeadPhones/desktop/audiophile.svg" alt="logo" />
+          <img src="/HeadPhones/desktop/audiophile.svg" alt="logo" />
         </div>
 
         {/* Links */}

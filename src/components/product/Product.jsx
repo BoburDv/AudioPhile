@@ -7,7 +7,7 @@ export default function Product({ title, description, isNew, img, reverse }) {
       className={styles.productWrapper}
       style={{ flexDirection: reverse ? "row-reverse" : "row" }}>
       <picture>
-        <source srcSet="../public/HeadPhones/tablet/product-t-1.png" media="(max-width: 790px)" />
+        <source srcSet="/HeadPhones/tablet/product-t-1.png" media="(max-width: 790px)" />
         <img src={img} alt={title} className={styles.productImage} />
       </picture>
 
