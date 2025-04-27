@@ -1,3 +1,13 @@
+:root{
+    --orange: #d87d4a;
+    --black: #101010;
+    --gray: #f1f1f1;
+    --light-gray: #fafafa;
+    --light-orange: #fbaf85;
+    --light-white: #ffffff;
+    --dark-black: #000000;
+}
+
 @font-face {
     font-family: 'Manrope';
     src: url('./assets/fonts/Manrope-Medium.woff2') format('woff2'),
@@ -27,6 +37,12 @@
 
 html{
     height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
