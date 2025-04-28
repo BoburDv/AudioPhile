@@ -35,6 +35,11 @@
   color: var(--light-white);
 }
 
+.links a:hover{
+  color: var(--orange);
+  transition: all 0.3s;
+}
+
 .headerTitle {
   margin-top: 98px;
   text-align: center;
@@ -63,5 +68,9 @@
 
   .list{
     display: block;
+  }
+
+  .header{
+    margin-bottom: 105px;
   }
 }

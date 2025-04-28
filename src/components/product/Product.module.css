@@ -59,6 +59,7 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: 105px;
   }
   .productTitle{
      width: 100%;
@@ -70,5 +71,11 @@
     margin: 0 auto;
     margin-top: 32px;
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 570px){
+  .productDescription{
+    max-width: 100%;
   }
 }

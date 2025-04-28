@@ -33,35 +33,35 @@
   color: var(--orange);
 }
 
-@media (max-width: 1200px){
-  .gearContainer{
+@media (max-width: 1200px) {
+  .gearContainer {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 
-@media (max-width: 790px){
-  .gearContainer{
+@media (max-width: 790px) {
+  .gearContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    margin: 105px 0px;
   }
-  .gearMain h2{
-     max-width: 80%;
-     margin: 0 auto;
+  .gearMain h2 {
+    max-width: 80%;
+    margin: 0 auto;
   }
 
-  .gearMain p{
+  .gearMain p {
     max-width: 85%;
     margin: 0 auto;
     margin-top: 32px;
   }
 
-  .gearMain{
+  .gearMain {
     text-align: center;
   }
 }
 
-@media (max-width: 768px){
-  
+@media (max-width: 768px) {
 }

@@ -6,6 +6,7 @@
 .footerContainer {
   max-width: 1109.83px;
   margin: 0 auto;
+  position: relative;
 }
 
 .footerMain {
@@ -42,27 +43,32 @@
   opacity: 50%;
 }
 
+.lineFooter{
+  position: absolute;
+  top: -31%;
+}
+
 .social {
   display: flex;
   gap: 16px;
 }
 
-@media (max-width: 1200px){
-  .footerContainer{
+@media (max-width: 1200px) {
+  .footerContainer {
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
   }
 }
 
-@media (max-width: 768px){
-  .social{
+@media (max-width: 768px) {
+  .social {
     position: absolute;
     bottom: 0px;
     right: 40px;
   }
 
-  .footerContainer p{
+  .footerContainer p {
     max-width: 98%;
   }
 
@@ -70,6 +76,17 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    
+    align-items: start;
+  }
+
+  .lineFooter{
+    position: absolute;
+    top: -28%;
+  }
+}
+
+@media (max-width: 650px){
+  .lineFooter{
+    top: -25.5%;
   }
 }

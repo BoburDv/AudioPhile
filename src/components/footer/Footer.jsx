@@ -43,6 +43,7 @@ export default function Footer({ links }) {
           </div>
         </div>
         
+        <img src="HeadPhones/desktop/line.svg" className={styles.lineFooter}/>
       </div>
     </footer>
   );

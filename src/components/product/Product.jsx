@@ -1,14 +1,14 @@
 import Button from "../button/Button";
 import styles from "./Product.module.css";
 
-export default function Product({ title, description, isNew, img, reverse }) {
+export default function Product({ title, description, isNew, img, reverse, tabletImg, mobileImg }) {
   return (
     <div
       className={styles.productWrapper}
       style={{ flexDirection: reverse ? "row-reverse" : "row" }}>
       <picture>
-        <source srcSet="/HeadPhones/tablet/product-t-1.png" media="(max-width: 790px)" />
-        <img src={img} alt={title} className={styles.productImage} />
+        <source srcSet={tabletImg} media="(max-width: 790px)" />
+        <img src={img} alt={title} className={styles.productImage}/>
       </picture>
 
       {/* ProductMain */}
